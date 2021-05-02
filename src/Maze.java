@@ -312,7 +312,6 @@ public class Maze {
             System.out.println("Sorry, but you didn't escape in time- you lose!");
         }
     }
-
     }
 
 
