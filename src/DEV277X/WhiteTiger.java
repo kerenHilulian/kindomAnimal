@@ -8,14 +8,13 @@ public class WhiteTiger extends  Tiger{
 
     @Override
     public Action getMove(CritterInfo info) {
-        if(super.getMove(info)==Action.INFECT) {
+        if (info.frontThreat() == true){
             infact = true;
-            return Action.INFECT;
         }
         else{
             infact = false;
-            return super.getMove(info);
         }
+        return super.getMove(info);
 
     }
 

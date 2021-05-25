@@ -3,7 +3,7 @@ package DEV277X;
 import java.awt.*;
 
 public class Bear extends Critter{
-    private boolean  polar;
+    private final boolean  polar;
     private int cunter = 0;
 
     public Bear(){
@@ -38,7 +38,6 @@ public class Bear extends Critter{
         else{
             return Color.black;
         }
-
     }
 
     @Override
